@@ -4,6 +4,7 @@ class GymEnquete < ApplicationRecord
   # 参加したコース 必須入力 数値 整数のみ 0〜1 (0:脂肪燃焼 1:ヨガ)
   validates :course_id, presence: true, numericality: { only_integer: true, greater_than_or_equal_to: 0, less_than_or_equal_to: 1 }
 
+  
   # 応募するプレゼント 必須入力 数値 整数のみ 0〜1 (0:サプリメントセット 1:温泉旅行)
   validates :present_id, presence: true, numericality: { only_integer: true, greater_than_or_equal_to: 0, less_than_or_equal_to: 1 }
 
